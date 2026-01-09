@@ -1,0 +1,82 @@
+{
+  "name": "RequestToBeForgotten",
+  "version": "1.0.0-alpha",
+  "author": [
+    "Telepedia Ltd."
+  ],
+  "url": "https://github.com/telepedia/mediawiki-extensions-rtbf",
+  "descriptionmsg": "rtbf-desc",
+  "license-name": "GPL-3.0-or-later",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.43.0",
+    "platform": {
+      "php": ">= 8.0"
+    }
+  },
+  "AutoloadNamespaces": {
+    "Telepedia\\Extensions\\RequestToBeForgotten\\": "includes"
+  },
+  "MessagesDirs": {
+    "RequestToBeForgotten": [
+      "i18n"
+    ]
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "resources",
+    "remoteExtPath": ""
+  },
+  "HookHandlers": {
+    "main": {
+      "class": "Telepedia\\Extensions\\RequestToBeForgotten\\Hooks\\Main"
+    }
+  },
+  "SpecialPages": {
+    "RequestToBeForgotten": {
+      "class": "Telepedia\\Extensions\\RequestToBeForgotten\\Specials\\SpecialRequestToBeForgotten",
+      "services": [
+        "UserFactory",
+        "RTBFService"
+      ]
+    },
+    "RequestToBeForgottenQueue": {
+      "class": "Telepedia\\Extensions\\RequestToBeForgotten\\Specials\\SpecialRequestToBeForgottenQueue",
+      "services": [
+        "RTBFService"
+      ]
+    }
+  },
+  "ResourceModules": {
+    "ext.rtbf.styles": {
+      "class": "MediaWiki\\ResourceLoader\\CodexModule",
+      "styles": [
+        "ext.rtbf.styles/index.less"
+      ],
+      "codexStyleOnly": "true",
+      "codexComponents": [
+        "CdxTable",
+        "CdxInfoChip"
+      ]
+    }
+  },
+  "ServiceWiringFiles": [
+    "includes/ServiceWiring.php"
+  ],
+  "AvailableRights": [
+    "request-to-be-forgotten-admin"
+  ],
+  "DatabaseVirtualDomains": [
+    "virtual-rtbf"
+  ],
+  "JobClasses": {
+    "RequestToBeForgottenJob": {
+      "class": "Telepedia\\Extensions\\RequestToBeForgotten\\RequestToBeForgottenJob",
+      "services": [],
+      "needsPage": false
+    }
+  },
+  "Hooks": {
+    "GetPreferences": "main"
+  },
+  "manifest_version": 2
+}

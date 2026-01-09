@@ -1,0 +1,45 @@
+<div class="cdx-table">
+    <div class="cdx-table__header">
+        <div class="cdx-table__header__caption" aria-hidden="true">
+            {{ title }}
+        </div>
+        <div class="cdx-table__header__header-content"></div>
+    </div>
+    <div class="cdx-table__table-wrapper">
+        <table class="cdx-table__table">
+            <caption>
+                {{ title }}
+            </caption>
+            <thead>
+            <tr>
+                <th scope="col">
+                    <span class="cdx-table__th-content">ID</span>
+                </th>
+                <th scope="col">
+                    <span class="cdx-table__th-content">Original Username</span>
+                </th>
+                <th scope="col">
+                    <span class="cdx-table__th-content">Target Username</span>
+                </th>
+                <th scope="col">
+                    <span class="cdx-table__th-content">Status</span>
+                </th>
+                <th scope="col" class="cdx-table__table__cell--align-number">
+                    <span class="cdx-table__th-content">Request Created</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#requests}}
+                <tr>
+                    <td><a href="{{rq_link}}">{{rq_id}}</a></td>
+                    <td>{{rq_user_name_original}}</td>
+                    <td>{{rq_user_name_target}}</td>
+                    <td>{{{rq_status}}}</td>
+                    <td class="cdx-table__table__cell--align-number">{{rq_created_at}}</td>
+                </tr>
+            {{/requests}}
+            </tbody>
+        </table>
+    </div>
+</div>

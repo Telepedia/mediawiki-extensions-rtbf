@@ -1,0 +1,37 @@
+{
+  "@metadata": {
+    "authors": [
+      "Original Authority"
+    ]
+  },
+  "rtbf-desc": "Self-service UI for users to Request to be Forgotten under the GDPR",
+  "rbtf-label": "Request to be forgotten:",
+  "rbtf-prefs-info": "Request account anonymisation under the GDPR",
+  "rtbf-request-form-info-box": "Use the below form to request the anonymisation of your account across the Telepedia Platform. During the process, your account will be renamed to a randomly generated string, and will be locked - you will be logged out and cannot log back in. We will delete any personally identifiable information about you.\n\nPlease check the details below:\n\n*'''Your Username''': $1\n*'''Your email''': $2\n\nWe will send an email to the email above which you will need to verify for the process to begin. If you do not have access to the above email, please change it.",
+  "requesttobeforgotten": "Request to be Forgotten",
+  "rtbf-confirm": "I confirm that I have read and understand the above and wish for my account to be anonymised",
+  "rtbf-insert-error": "There was an error creating the request. Please try again later.",
+  "rtbf-user-not-found": "Cannot rename user as the requested user does not exist",
+  "rtbf-email-not-confirmed": "You must have a valid and confirmed email to use the request to be forgotten tool. Please confirm your email in your preferences.",
+  "rtbf-already-pending": "We have already received a request to anonymise your account. Please check your email for the confirmation.",
+  "rtbf-user-mismatch": "The provided token is not valid for the current account",
+  "rtbf-rename-fail": "Renaming user in user table and actor table failed",
+  "rtbf-email-title": "Your request to be anonymised on Telepedia",
+  "rtbf-email-body-intro": "Hello $1,",
+  "rtbf-email-body-text": "You are receiving this email as you recently requested that your account be anonymised across the Telepedia Platform.\n\nPlease note we have received this request. Please click the link below to confirm the request.",
+  "rtbf-email-body-text-2": "Please note that this is irreversible. Your username will be scrambled, and you will no longer be able to log into your account. If you would like to return to Telepedia in the future, you will need to create a new account.\n\nThis confirmation will expire in 15 minutes.\n\nThank you,\n\nTelepedia Support",
+  "rtbf-footer-text": "You are receiving this email as you requested we delete all data we hold about you. If you did not submit this request, please disregard this email and contact Telepedia Staff.",
+  "rtbf-email-body-text-plain": "Hello $1, you are receiving this email as you recently requested that your account be anonymised across the Telepedia Platform.\n\nPlease note we have received this request.\n\nPlease click the link below to confirm the request, it will expire in 15 minutes.\n\n$2",
+  "rtbf-email-error": "An error occurred whilst sending the confirmation email. Please try again later.",
+  "rtbf-expired-token": "The confirmation token has expired and is no longer valid. Please submit a new request.",
+  "rtbf-request-confirmed": "Thank you for confirming the request. The process to anonymise your account will now begin.",
+  "requesttobeforgottenqueue": "Request To Be Forgotten Queue",
+  "rtbf-request-error": "Specified request could not be found, or is invalid.",
+  "rtbf-request-error-wikis": "Anonymisation request was found, but no jobs have been scheduled. This indicates an issue with the request.",
+  "rtbf-status-pending": "Awaiting Confirmation",
+  "rtbf-status-confirmed": "Confirmed - waiting",
+  "rtbf-status-in-progress": "In Progress",
+  "rtbf-status-complete": "Completed",
+  "rtbf-confirm-title": "Confirm account anonymisation",
+  "rtbf-confirm-intro-text": "You are about to anonymise your account on Telepedia; please confirm that this is your intention. Please note, that this process is irreversible. Your password will be scrambled and your email address will be removed. All personal data we hold about you will be deleted, or where this is not possible, anonymised."
+}
