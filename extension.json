@@ -15,7 +15,8 @@
     }
   },
   "AutoloadNamespaces": {
-    "Telepedia\\Extensions\\RequestToBeForgotten\\": "includes"
+    "Telepedia\\Extensions\\RequestToBeForgotten\\": "includes",
+    "Telepedia\\Extensions\\RequestToBeForgotten\\Maintenance": "maintenance"
   },
   "MessagesDirs": {
     "RequestToBeForgotten": [
