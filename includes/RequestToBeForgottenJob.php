@@ -119,7 +119,7 @@ class RequestToBeForgottenJob extends Job {
 			'block_target' => [
 				[
 					'where' => [
-						'bt_id' => $this->userId,
+						'bt_user' => $this->userId,
 					],
 				],
 			],
