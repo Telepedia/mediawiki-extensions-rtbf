@@ -14,7 +14,7 @@ class SpecialRequestToBeForgottenQueue extends UnlistedSpecialPage {
 	public function __construct(
 		private readonly RTBFService $rtbfService
 	) {
-		parent::__construct( 'RequestToBeForgottenQueue', 'request-to-be-forgotten-admin' );
+		parent::__construct( 'RequestToBeForgottenQueue' );
 	}
 
 	public function execute( $id ) {
@@ -125,5 +125,12 @@ class SpecialRequestToBeForgottenQueue extends UnlistedSpecialPage {
 		);
 
 		$this->getOutput()->addHTML( $html );
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getRestriction(): string {
+		return 'request-to-be-forgotten-admin';
 	}
 }
